@@ -1,0 +1,14 @@
+FloatLayout:
+    BoxLayout:
+        orientation: 'vertical'
+        MDLabel:
+            id: message_label
+            halign: 'center'
+        MDRaisedButton:
+            text: "Take Image"
+            size_hint: .5, .4
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release:
+                app.detect_handwriting()
+        Widget:
+            size_hint_y: .07
